@@ -2,6 +2,13 @@
 
 Wiki Dados Project
 
+## 🌐 Acesse o site em produção
+
+**URL Importante:**  
+O projeto está disponível em produção no seguinte endereço:
+
+[https://wiki-data-project.netlify.app/](https://wiki-data-project.netlify.app/)
+
 ## Criar arquivo `.env`
 
 1. No diretório raiz do projeto, crie um arquivo chamado `.env`.
