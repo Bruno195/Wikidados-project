@@ -24,6 +24,10 @@ npm install
 npm run dev
 ```
 
+⚠️ Aviso Importante:
+O login está mockado, ou seja, qualquer dado inserido no campo de login permitirá o acesso ao sistema.
+Essa funcionalidade foi configurada apenas para fins de desenvolvimento e testes.
+
 ### Verifique os arquivos com o lint
 
 ```bash
