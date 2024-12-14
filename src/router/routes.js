@@ -1,18 +1,36 @@
+import LayoutLogin from 'src/layouts/LayoutLogin.vue'
+import Login from 'src/pages/Login.vue'
+import Dashboard from 'src/pages/Dashboard.vue'
+import UserManagement from 'src/pages/UserManagement.vue'
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    component: LayoutLogin,
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') }
-    ]
+      {
+        path: '',
+        component: Login, // Página de Login
+      },
+    ],
   },
-
-  // Always leave this as last one,
-  // but you can also remove it
+  {
+    path: '/',
+    component: () => import('src/layouts/MainLayout.vue'), // Altere para o layout apropriado
+    children: [
+      {
+        path: 'dashboard',
+        component: Dashboard, // Página do Dashboard
+      },
+      {
+        path: 'users',
+        component: UserManagement,
+      },
+    ],
+  },
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
+    component: () => import('src/pages/ErrorNotFound.vue'), // Página de erro 404
+  },
 ]
 
 export default routes

@@ -1,40 +1,43 @@
-# Quasar App (quasar-project)
+# Wikidados App
 
-A Quasar Project
+Wiki Dados Project
 
-## Install the dependencies
+## Criar arquivo `.env`
+
+1. No diretório raiz do projeto, crie um arquivo chamado `.env`.
+
+2. Adicione as variáveis de ambiente necessárias ao arquivo, seguindo o formato `CHAVE=VALOR`. Exemplo:
+
+```env
+VITE_API_BASE_URL=https://reqres.in/api
+```
+
+## Instalar as dependências
+
 ```bash
-yarn
-# or
 npm install
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+### Rodar aplicação
+
 ```bash
-quasar dev
+npm run dev
 ```
 
+### Verifique os arquivos com o lint
 
-### Lint the files
 ```bash
-yarn lint
-# or
 npm run lint
 ```
 
+### Formatar arquivos
 
-### Format the files
 ```bash
-yarn format
-# or
 npm run format
 ```
 
+### Build da applicação
 
-### Build the app for production
 ```bash
-quasar build
+npm run build
 ```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
